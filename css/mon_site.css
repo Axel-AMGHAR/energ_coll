@@ -1,0 +1,139 @@
+@charset "UTF-8";
+.a_cacher {
+  display: none;
+}
+
+.Icon {
+  /* Permet de redimensionner en changeant la font-size de l’icône */
+  width: 1em;
+  height: 1em;
+  /* Bel alignement visuel des icônes avec le texte */
+  vertical-align: -0.15em;
+  /* fill par défaut = valeur de la propriété couleur de son élément parent */
+  fill: currentColor;
+  /* Les paths et les strokes qui dépassent de la viewBox peuvent apparaître dans IE.
+	 Si vous utilisez normalize.css, inutile de l’ajouter. */
+  overflow: hidden;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.mbm {
+  margin-bottom: 1rem;
+}
+
+.photo img {
+  width: 300px;
+}
+
+.barrnav ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background-color: #B4D143;
+}
+
+.barrnav img.hamb {
+  width: 50px;
+  height: 50px;
+}
+
+.barrnav li {
+  list-style-type: none;
+}
+
+.barrnav li:hover {
+  background-color: #768c22;
+}
+
+@media screen and (min-width: 768px) {
+  .barrnav ul {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.inner {
+  width: 100%;
+}
+
+.logo_site {
+  width: 100px;
+}
+
+.bg_dotted {
+  background-image: url("../img/points.svg");
+}
+
+.bg_orange {
+  background-color: orange;
+}
+
+.bg_vert {
+  background-color: green;
+}
+
+.lesLogos {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.lesLogos > div {
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .inner {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .inner {
+    width: 1170px;
+  }
+}
+
+.texte_principal {
+  text-align: center;
+  font-weight: bold;
+}
+
+.photo_texte {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .photo_texte {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .texte {
+    padding-left: 1rem;
+  }
+}
+
+header {
+  background-image: url("../Photos/20161202_101925.jpg");
+  height: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 400px;
+  }
+}
+
+/*# sourceMappingURL=mon_site.css.map */
